@@ -1,0 +1,319 @@
+===LSMOD===
+Module                  Size  Used by
+qrtr                   53248  2
+binfmt_misc            24576  1
+sch_fq_codel           28672  1
+efi_pstore             12288  0
+vmw_vsock_vmci_transport    53248  1
+vsock                  73728  3 vmw_vsock_vmci_transport
+vmw_vmci              106496  1 vmw_vsock_vmci_transport
+hid_generic            12288  0
+ghash_clmulni_intel    12288  0
+usbhid                 86016  0
+psmouse               225280  0
+ahci                   53248  0
+hid                   282624  2 usbhid,hid_generic
+libahci                57344  1 ahci
+mptspi                 28672  2
+floppy                143360  0
+scsi_transport_spi     40960  1 mptspi
+mptscsih               53248  1 mptspi
+mptbase               126976  2 mptspi,mptscsih
+pata_acpi              12288  0
+serio_raw              20480  0
+msr                    12288  0
+lp                     32768  0
+ppdev                  24576  0
+parport                81920  2 lp,ppdev
+dmi_sysfs              28672  0
+autofs4                61440  2
+aesni_intel            98304  0
+===PS===
+    PID COMMAND         STAT    PPID
+      1 systemd         Ss         0
+      2 kthreadd        S          0
+      3 pool_workqueue_ S          2
+      4 kworker/R-rcu_g I<         2
+      5 kworker/R-sync_ I<         2
+      6 kworker/R-kvfre I<         2
+      7 kworker/R-slub_ I<         2
+      8 kworker/R-netns I<         2
+      9 kworker/0:0-cgr I          2
+     10 kworker/0:0H-kb I<         2
+     11 kworker/0:1-eve I          2
+     12 kworker/u512:0- I          2
+     13 kworker/R-mm_pe I<         2
+     14 ksoftirqd/0     S          2
+     15 rcu_preempt     I          2
+     16 rcu_exp_par_gp_ S          2
+     17 rcu_exp_gp_kthr S          2
+     18 migration/0     S          2
+     19 kprobe-optimize S          2
+     20 idle_inject/0   S          2
+     21 cpuhp/0         S          2
+     22 cpuhp/1         S          2
+     23 idle_inject/1   S          2
+     24 migration/1     S          2
+     25 ksoftirqd/1     S          2
+     26 kworker/1:0-eve I          2
+     27 kworker/1:0H-kb I<         2
+     28 kworker/u513:0- I          2
+     29 kworker/u514:0- I          2
+     30 kdevtmpfs       S          2
+     31 kworker/R-inet_ I<         2
+     32 rcu_tasks_kthre I          2
+     33 rcu_tasks_rude_ I          2
+     34 kauditd         S          2
+     35 khungtaskd      S          2
+     36 kworker/u513:1- I          2
+     37 oom_reaper      S          2
+     38 kworker/u513:2- I          2
+     39 kworker/R-write I<         2
+     40 kcompactd0      S          2
+     41 ksmd            SN         2
+     42 khugepaged      SN         2
+     43 kworker/R-kbloc I<         2
+     44 kworker/R-blkcg I<         2
+     45 kworker/R-kinte I<         2
+     46 irq/9-acpi      S          2
+     47 kworker/u514:1- I          2
+     48 kworker/1:1-eve I          2
+     49 kworker/R-tpm_d I<         2
+     50 kworker/R-ata_s I<         2
+     51 kworker/R-md_bi I<         2
+     52 kworker/R-md_ll I<         2
+     53 kworker/R-md_ll I<         2
+     54 kworker/R-edac- I<         2
+     55 kworker/R-devfr I<         2
+     56 watchdogd       S          2
+     57 kworker/R-quota I<         2
+     58 kswapd0         S          2
+     59 ecryptfs-kthrea S          2
+     60 kworker/R-kthro I<         2
+     61 irq/24-pciehp   S          2
+     62 irq/25-pciehp   S          2
+     63 irq/26-pciehp   S          2
+     64 irq/27-pciehp   S          2
+     65 irq/28-pciehp   S          2
+     66 irq/29-pciehp   S          2
+     67 irq/30-pciehp   S          2
+     68 irq/31-pciehp   S          2
+     69 irq/32-pciehp   S          2
+     70 irq/33-pciehp   S          2
+     71 irq/34-pciehp   S          2
+     72 irq/35-pciehp   S          2
+     73 irq/36-pciehp   S          2
+     74 irq/37-pciehp   S          2
+     75 irq/38-pciehp   S          2
+     76 irq/39-pciehp   S          2
+     77 irq/40-pciehp   S          2
+     78 irq/41-pciehp   S          2
+     79 irq/42-pciehp   S          2
+     80 irq/43-pciehp   S          2
+     81 irq/44-pciehp   S          2
+     82 irq/45-pciehp   S          2
+     83 irq/46-pciehp   S          2
+     84 irq/47-pciehp   S          2
+     85 irq/48-pciehp   S          2
+     86 irq/49-pciehp   S          2
+     87 irq/50-pciehp   S          2
+     88 irq/51-pciehp   S          2
+     89 irq/52-pciehp   S          2
+     90 irq/53-pciehp   S          2
+     91 irq/54-pciehp   S          2
+     92 irq/55-pciehp   S          2
+     93 kworker/R-acpi_ I<         2
+     94 scsi_eh_0       S          2
+     95 kworker/R-scsi_ I<         2
+     96 scsi_eh_1       S          2
+     97 kworker/R-scsi_ I<         2
+     98 kworker/u513:3- I          2
+     99 kworker/u513:4- I          2
+    100 kworker/u513:5- I          2
+    101 kworker/0:2-eve I          2
+    102 kworker/R-mld   I<         2
+    103 kworker/R-ipv6_ I<         2
+    104 kworker/u512:1- I          2
+    105 kworker/R-kstrp I<         2
+    107 kworker/u515:0  I<         2
+    108 kworker/u516:0  I<         2
+    109 kworker/u517:0  I<         2
+    115 kworker/u514:2- I          2
+    121 kworker/R-charg I<         2
+    181 kworker/1:2-cgr I          2
+    308 kworker/R-mpt_p I<         2
+    309 kworker/R-mpt/0 I<         2
+    310 scsi_eh_2       S          2
+    311 kworker/R-scsi_ I<         2
+    313 scsi_eh_3       S          2
+    314 kworker/R-scsi_ I<         2
+    315 scsi_eh_4       S          2
+    316 kworker/R-scsi_ I<         2
+    317 scsi_eh_5       S          2
+    318 kworker/R-scsi_ I<         2
+    319 scsi_eh_6       S          2
+    320 kworker/R-scsi_ I<         2
+    321 scsi_eh_7       S          2
+    322 kworker/R-scsi_ I<         2
+    323 scsi_eh_8       S          2
+    324 kworker/R-scsi_ I<         2
+    325 scsi_eh_9       S          2
+    326 kworker/R-scsi_ I<         2
+    327 scsi_eh_10      S          2
+    328 kworker/R-scsi_ I<         2
+    329 scsi_eh_11      S          2
+    330 kworker/R-scsi_ I<         2
+    331 scsi_eh_12      S          2
+    332 kworker/R-scsi_ I<         2
+    333 scsi_eh_13      S          2
+    334 kworker/R-scsi_ I<         2
+    335 scsi_eh_14      S          2
+    336 kworker/R-scsi_ I<         2
+    337 scsi_eh_15      S          2
+    338 kworker/R-scsi_ I<         2
+    339 scsi_eh_16      S          2
+    340 kworker/R-scsi_ I<         2
+    341 scsi_eh_17      S          2
+    342 kworker/R-scsi_ I<         2
+    343 scsi_eh_18      S          2
+    344 kworker/R-scsi_ I<         2
+    345 scsi_eh_19      S          2
+    346 kworker/R-scsi_ I<         2
+    347 scsi_eh_20      S          2
+    348 kworker/R-scsi_ I<         2
+    349 scsi_eh_21      S          2
+    350 kworker/R-scsi_ I<         2
+    351 scsi_eh_22      S          2
+    352 kworker/R-scsi_ I<         2
+    354 scsi_eh_23      S          2
+    355 kworker/R-scsi_ I<         2
+    357 scsi_eh_24      S          2
+    358 kworker/R-scsi_ I<         2
+    359 scsi_eh_25      S          2
+    360 kworker/R-scsi_ I<         2
+    361 scsi_eh_26      S          2
+    362 kworker/R-scsi_ I<         2
+    363 scsi_eh_27      S          2
+    364 kworker/R-scsi_ I<         2
+    365 scsi_eh_28      S          2
+    366 kworker/R-scsi_ I<         2
+    367 scsi_eh_29      S          2
+    368 kworker/R-scsi_ I<         2
+    369 scsi_eh_30      S          2
+    370 kworker/R-scsi_ I<         2
+    371 scsi_eh_31      S          2
+    372 kworker/R-scsi_ I<         2
+    373 scsi_eh_32      S          2
+    374 kworker/R-scsi_ I<         2
+    375 kworker/u514:3- I          2
+    376 kworker/u514:4- I          2
+    377 kworker/u514:5- I          2
+    378 kworker/u514:6- I          2
+    379 kworker/u514:7- I          2
+    380 kworker/u514:8- I          2
+    381 kworker/u514:9- I          2
+    382 kworker/u514:10 I          2
+    383 kworker/u514:11 I          2
+    384 kworker/u514:12 I          2
+    385 kworker/u514:13 I          2
+    386 kworker/u514:14 I          2
+    387 kworker/u514:15 I          2
+    388 kworker/u514:16 I          2
+    389 kworker/u514:17 I          2
+    390 kworker/u514:18 I          2
+    391 kworker/u514:19 I          2
+    392 kworker/u514:20 I          2
+    393 kworker/u514:21 I          2
+    394 kworker/u514:22 I          2
+    395 kworker/u514:23 I          2
+    396 kworker/u514:24 I          2
+    397 kworker/u514:25 I          2
+    398 kworker/u514:26 I          2
+    399 kworker/u514:27 I          2
+    400 kworker/u514:28 I          2
+    401 kworker/u514:29 I          2
+    402 kworker/u514:30 I          2
+    403 kworker/u514:31 I          2
+    404 kworker/1:1H    I<         2
+    405 kworker/0:1H-kb I<         2
+    406 kworker/1:2H-kb I<         2
+    424 kworker/0:2H    I<         2
+    427 jbd2/sda2-8     S          2
+    428 kworker/R-ext4- I<         2
+    443 irq/60-vmw_vmci S          2
+    444 irq/61-vmw_vmci S          2
+    445 irq/62-vmw_vmci S          2
+    481 psimon          S          2
+    487 systemd-journal S<s        1
+    532 systemd-oomd    Ss         1
+    533 systemd-resolve Ss         1
+    553 systemd-udevd   Rs         1
+    651 psimon          S          2
+    807 VGAuthService   Ss         1
+    808 vmtoolsd        Ssl        1
+    830 kworker/u513:6  I          2
+    913 avahi-daemon    Ss         1
+    914 chronyd-starter Ss         1
+    915 dbus-daemon     Ss         1
+    921 poweron-vm-defa S        808
+    931 networkd-dispat Ss         1
+    933 network         S        921
+    936 polkitd         Ssl        1
+    953 snap            Ssl        1
+    960 snapd           Ssl        1
+    974 accounts-daemon Ssl        1
+    977 cron            Ss         1
+    982 switcheroo-cont Ssl        1
+    994 systemd-logind  Ss         1
+    998 udisksd         Ssl        1
+   1021 rsyslogd        Ssl        1
+   1062 avahi-daemon    S        913
+   1077 kworker/0:3     I          2
+   1134 NetworkManager  Ssl        1
+   1140 wpa_supplicant  Ss         1
+   1143 chronyd         S        914
+   1153 journalctl      Rs         1
+   1157 chronyd         S       1143
+   1224 ModemManager    Ssl        1
+   1238 systemd-hostnam Ss         1
+   1309 nm-dispatcher   Ssl        1
+   1330 cupsd           Ss         1
+   1349 unattended-upgr Rs         1
+   1370 dbus            S       1330
+   1371 dbus            S       1330
+   1380 (chmod)         S          1
+   1383 cups-browsed    Ssl        1
+   1397 gdm3            Ssl        1
+   1413 vmtoolsd        S        808
+   1414 bash            S       1413
+   1417 (udev-worker)   R        553
+   1418 (udev-worker)   R        553
+   1420 (systemd-timed) Rs         1
+   1421 (udev-worker)   R        553
+   1422 (udev-worker)   R        553
+   1423 (udev-worker)   R        553
+   1424 ps              R       1414
+   1425 (udev-worker)   R        553
+   1426 (udev-worker)   R        553
+   1427 (udev-worker)   R        553
+   1428 (udev-worker)   R        553
+   1429 (udev-worker)   R        553
+   1430 (udev-worker)   R        553
+   1431 (udev-worker)   R        553
+   1432 (udev-worker)   R        553
+   1433 (udev-worker)   R        553
+   1434 (udev-worker)   R        553
+   1435 (udev-worker)   R        553
+===NET===
+Netid State  Recv-Q Send-Q Local Address:Port Peer Address:PortProcess
+udp   UNCONN 0      0          127.0.0.1:323       0.0.0.0:*          
+udp   UNCONN 0      0            0.0.0.0:5353      0.0.0.0:*          
+udp   UNCONN 0      0         127.0.0.54:53        0.0.0.0:*          
+udp   UNCONN 0      0      127.0.0.53%lo:53        0.0.0.0:*          
+udp   UNCONN 0      0              [::1]:323          [::]:*          
+udp   UNCONN 0      0               [::]:5353         [::]:*          
+tcp   LISTEN 0      4096      127.0.0.54:53        0.0.0.0:*          
+tcp   LISTEN 0      4096   127.0.0.53%lo:53        0.0.0.0:*          
+tcp   LISTEN 0      4096       127.0.0.1:631       0.0.0.0:*          
+tcp   LISTEN 0      4096           [::1]:631          [::]:*          
+===BPF===
